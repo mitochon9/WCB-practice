@@ -1,0 +1,132 @@
+body {
+  color: #666;
+}
+
+p,
+dl {
+  font-size: 1.2rem;
+}
+
+.container {
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero {
+  background-image: url(./img/bread1.jpg);
+  text-align: center;
+  padding-top: 10vh;
+}
+
+.title {
+  font-family: "Dancing Script", cursive;
+  font-size: 7rem;
+  margin-bottom: 2rem;
+}
+
+.menu {
+  background-image: url(./img/bread2.jpg);
+  position: relative;
+}
+
+.menu-text-box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20%;
+  width: 30%;
+}
+
+.menu-text-box dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-text-box dt,
+.menu-text-box dd {
+  margin-top: 16px;
+}
+
+.menu-text-box dt {
+  width: 70%;
+}
+
+.menu-text-box dd {
+  width: 30%;
+}
+
+.contact {
+  background-image: url(./img/cafe.jpg);
+  text-align: center;
+  padding-top: 20vh;
+}
+
+.contact button {
+  border-radius: 5px;
+  font-size: 1.6rem;
+  margin-top: 48px;
+  background-color: #666;
+  color: #fafafa;
+  padding: 16px 64px;
+  position: relative;
+  box-shadow: 0 3px #333;
+  transition-duration: 0.3s;
+}
+
+.contact button:hover {
+  box-shadow: 0 1px #333;
+  top: 3px;
+}
+
+.contact .icon {
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-around;
+  width: 224px;
+  margin: 48px auto 0;
+}
+
+.contact i {
+  background-color: #fafafa;
+  border-radius: 50%;
+  padding: 16px;
+  box-shadow: 0 3px #333;
+  transition-duration: 0.3s;
+  position: relative;
+}
+
+.contact i:hover {
+  box-shadow: 0 1px #333;
+  top: 3px;
+}
+
+/* 
+MOBILE SIZE
+===================== */
+@media (max-width: 700px) {
+  p {
+    padding: 0 8px;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .menu-text-box {
+    left: 16px;
+    width: 100%;
+  }
+
+  .contact button {
+    font-size: 1.2rem;
+  }
+}
