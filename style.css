@@ -127,7 +127,7 @@ MOBILE SIZE
 
   .menu-text-box {
     left: 16px;
-    width: 100%;
+    width: calc(100% - 16px);
   }
 
   .contact button {
